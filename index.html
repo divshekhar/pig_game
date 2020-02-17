@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Pig Game</title>
+</head>
+
+<body>
+    <div class="wrapper clearfix">
+        <div class="player-0-panel active">
+            <div class="player-name" id="name-0">Player 1</div>
+            <div class="player-score" id="score-0">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-0">0</div>
+            </div>
+        </div>
+
+        <div class="player-1-panel">
+            <div class="player-name" id="name-1">Player 2</div>
+            <div class="player-score" id="score-1">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+        </div>
+
+        <button class="btn-new">New Game</button>
+        <button class="btn-roll">Roll</button>
+        <button class="btn-hold">Hold</button>
+
+        <img src="img/dice-1.png" alt="Dice" class="dice" id="dice-1">
+    </div>
+
+    <script src="jscript.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCxyUhIU4QRfcRc4TCTjYFnNqtUzWeFEJs",
+    authDomain: "divyanshu-shekhar-66408.firebaseapp.com",
+    databaseURL: "https://divyanshu-shekhar-66408.firebaseio.com",
+    projectId: "divyanshu-shekhar-66408",
+    storageBucket: "",
+    messagingSenderId: "987796535549",
+    appId: "1:987796535549:web:4a1e2227ee1338f30ca694",
+    measurementId: "G-H6MZPGEC05"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+
+</html>
